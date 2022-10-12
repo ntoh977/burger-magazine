@@ -18,11 +18,13 @@
 <?php
 		wp_body_open(); ?>
         <div class="top__container">
-        <div class="top__logo"><img src=" <?php
+        <div class="top__logo">
+        <a href="<?php echo home_url(); ?>">
+            <img src=" <?php
 $custom_logo_id = get_theme_mod( 'custom_logo' );
 $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 echo $image[0];
-    ?>" /></div>
+    ?>" /></a></div>
         <div class="top__input">
             <form class="example" action="">
                 <button type="submit"><img src="<?php echo get_template_directory_uri(); ?>/img/Location.png"

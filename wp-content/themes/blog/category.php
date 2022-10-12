@@ -1,7 +1,6 @@
 <?php get_header(); ?>
-<div class="blockproduct">
+<div class="blockproduct categoripost-page">
 
-<div class="blockproduct__container">
 <?php
 $category = get_category( get_query_var( 'cat' ) );
  $cat_id = $category->cat_ID;
@@ -28,8 +27,8 @@ while ( $loop->have_posts() ) : $loop->the_post(); ?>
             <div class="text"> <?php echo  wp_trim_words(get_the_excerpt(), 7, '...');?></div>
             <div class="blockproduct-price-btn">
                 <!-- <div class="price">620 ₽</div> -->
-                <div class="btn"><a href="<?php the_permalink(); ?>"
-                        title="<?php the_title_attribute(); ?>">Читать статью...</div>
+  
+                    <a href="<?php the_permalink(); ?>"  title="<?php the_title_attribute(); ?>"><div class="btn">Читать статью...</div></a>
             </div>
         </div>
 </div>
@@ -38,7 +37,7 @@ endwhile;
 wp_reset_postdata();    
 ?>
         </div>
-        </div>
+      
 
 
 

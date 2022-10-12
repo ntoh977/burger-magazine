@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html>
 
 
 <body>
 
-<?php get_header(); ?>
+    <?php get_header(); ?>
 
     <div class="menu">
         <?php 
@@ -56,7 +55,8 @@ wp_nav_menu( array(
         <?php 
           $category_ids = get_all_category_ids();
           ?>
-        <div class="title-main"><?php echo get_cat_name($category_ids[1]); ?></div>
+             
+        <div class="title-main"><a href=" <?php echo get_category_link($category_ids[1]); ?> "><?php echo get_cat_name($category_ids[1]); ?></a></div>
         <div class="slider__top">
             <?php
             $args = array('cat' => $category_ids[1],
@@ -79,8 +79,9 @@ wp_nav_menu( array(
                         <div class="text"> <?php echo  wp_trim_words(get_the_excerpt(), 7, '...');?></div>
                         <div class="blockproduct-price-btn">
                             <!-- <div class="price">620 ₽</div> -->
-                            <div class="btn"><a href="<?php the_permalink(); ?>"
-                                    title="<?php the_title_attribute(); ?>">Читать статью...</div>
+                            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                                <div class="btn">Читать статью...</div>
+                            </a>
                         </div>
                     </div>
             </div>
@@ -92,7 +93,7 @@ wp_nav_menu( array(
         </div>
     </div>
     <div class="blockproduct">
-        <div class="title-main"><?php echo get_cat_name($category_ids[2]); ?></div>
+        <div class="title-main"><a href=" <?php echo get_category_link($category_ids[2]); ?> "><?php echo get_cat_name($category_ids[2]); ?></a></div>
         <div class="slider__top">
             <?php
             $args = array('cat' => $category_ids[2],
@@ -115,8 +116,9 @@ wp_nav_menu( array(
                         <div class="text"> <?php echo  wp_trim_words(get_the_excerpt(), 7, '...');?></div>
                         <div class="blockproduct-price-btn">
                             <!-- <div class="price">620 ₽</div> -->
-                            <div class="btn"><a href="<?php the_permalink(); ?>"
-                                    title="<?php the_title_attribute(); ?>">Читать статью...</div>
+                            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                                <div class="btn">Читать статью...</div>
+                            </a>
                         </div>
                     </div>
             </div>
@@ -127,7 +129,7 @@ wp_nav_menu( array(
         </div>
     </div>
     <div class="blockproduct">
-        <div class="title-main"><?php echo get_cat_name($category_ids[3]); ?></div>
+        <div class="title-main"><a href=" <?php echo get_category_link($category_ids[3]); ?> "><?php echo get_cat_name($category_ids[3]); ?></a></div>
         <div class="slider__top">
             <?php
             $args = array('cat' => $category_ids[3],
@@ -150,8 +152,9 @@ wp_nav_menu( array(
                         <div class="text"> <?php echo  wp_trim_words(get_the_excerpt(), 7, '...');?></div>
                         <div class="blockproduct-price-btn">
                             <!-- <div class="price">620 ₽</div> -->
-                            <div class="btn"><a href="<?php the_permalink(); ?>"
-                                    title="<?php the_title_attribute(); ?>">Читать статью...</div>
+                            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                                <div class="btn">Читать статью...</div>
+                            </a>
                         </div>
                     </div>
             </div>

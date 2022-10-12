@@ -16,11 +16,13 @@
         <ul class="footer__menu">
             <li>
                 <div class="title">
-                    <div class="top__logo"><img src=" <?php
+                <div class="top__logo">
+        <a href="<?php echo home_url(); ?>">
+            <img src=" <?php
 $custom_logo_id = get_theme_mod( 'custom_logo' );
 $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 echo $image[0];
-    ?>" /></div>
+    ?>" /></a></div>
                 </div>
             </li>
             <li>© ООО СК «АПШЕРОН» <br>Все права защищены. 2010-2020</li>

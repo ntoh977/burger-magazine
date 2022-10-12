@@ -466,6 +466,16 @@ form.example button {
 .our-cafe .our-cafe__center_bottom2 {
   position: absolute;
 }
+.categoripost-page {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  
+}
+.categoripost-page .blockproduct__container{
+  margin: 50px 0;
+}
 .our-cafe .our-cafe__mask_group {
   z-index: 1;
   width: 100%;
@@ -727,6 +737,21 @@ footer .footer__menu2 a{
   border-radius: 20px;
   
 }
+.single__page {
+  padding: 0 20px;
+  margin: 0 auto;
+
+}
+.single__page  img {
+  border-radius: 20px;
+}
+.single__page  .wp-block-image {
+  border-radius: 20px;
+}
+.single__page-title {
+  padding: 0 10px;
+  color: #0089BA;
+}
 @media (max-width: 1302px) {
   .our-cafe {
     padding-bottom: 50px;
@@ -756,6 +781,11 @@ footer .footer__menu2 a{
   }
 }
 @media (max-width: 644px) {
+  .categoripost-page .blockproduct__container {
+    margin: 50px auto;
+    max-width: 427px;
+}
+  
   .maps-reclama {
     position: relative;
     display: flex;
@@ -837,6 +867,15 @@ footer .footer__menu2 a{
   .maps-reclama {
     height: auto;
   }
+  .categoripost-page .blockproduct__container {
+    margin: 0 auto;
+    max-width: 427px;
+}
+.categoripost-page {
+
+  gap: 10px;
+
+}
 }
 @media (max-width: 439px) {
   footer {
